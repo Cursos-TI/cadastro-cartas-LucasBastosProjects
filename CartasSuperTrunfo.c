@@ -10,8 +10,8 @@ int main(){
     float Area1;
     float PIB1;
     int PontosTuristicos1;
-    float DensidadePopulacional1;
-    float PIBperCapita1;
+    float DensidadePopulacional1; //Nova variável para o desafio nível aventureiro
+    float PIBperCapita1; //Nova variável para o desafio nível aventureiro
 
     // Variáveis da Carta 2
     char Estado2;
@@ -21,8 +21,8 @@ int main(){
     float Area2;
     float PIB2;
     int PontosTuristicos2;
-    float DensidadePopulacional2;
-    float PIBperCapita2;
+    float DensidadePopulacional2; //Nova variável para o desafio nível aventureiro
+    float PIBperCapita2; //Nova variável para o desafio nível aventureiro
 
     // == Entrada de dados Carta 1 ==
     // Letra que representa o Estado
@@ -57,10 +57,10 @@ int main(){
     scanf("%d", &PontosTuristicos1);
 
     // Densidade Populacional - Cálculo
-    DensidadePopulacional1 = (float)(Populacao1 / Area1);
+    DensidadePopulacional1 = (float)(Populacao1 / Area1); //Novo cálculo para o desafio nível aventureiro
 
     // PIB per Capita - Cálculo
-    PIBperCapita1 = (float)(PIB1 *1e9) / (Populacao1);
+    PIBperCapita1 = (float)(PIB1 *1e9) / (Populacao1); //Novo cálculo para o desafio nível aventureiro + 1e9 que faz a multiplicação por 1 bilhão
     getchar();
 
     // == Entrada de dados Carta 2 ==
@@ -96,10 +96,10 @@ int main(){
     scanf("%d", &PontosTuristicos2);
 
     // Densidade Populacional - Cálculo
-    DensidadePopulacional2 = (float)(Populacao2 / Area2);
+    DensidadePopulacional2 = (float)(Populacao2 / Area2); //Novo cálculo para o desafio nível aventureiro
 
     // PIB per Capita - Cálculo
-    PIBperCapita2 = (float)(PIB2 * 1e9) / (Populacao2);
+    PIBperCapita2 = (float)(PIB2 * 1e9) / (Populacao2); //Novo cálculo para o desafio nível aventureiro + 1e9 que faz a multiplicação por 1 bilhão
 
 
     // Exibiçao de dados Carta1
@@ -112,8 +112,8 @@ int main(){
     printf("Área: %.2f km²\n", Area1);
     printf("PIB: %.2f bilhões de reais\n", PIB1);
     printf("Número de Pontos Turísticos: %d\n", PontosTuristicos1);
-    printf("Densidade Populacional: %.2f hab/km² \n", DensidadePopulacional1);
-    printf("PIB per Capita: %.2f reais\n", PIBperCapita1);
+    printf("Densidade Populacional: %.2f hab/km² \n", DensidadePopulacional1); // Nova saida de dados para o desafio Aventureiro
+    printf("PIB per Capita: %.2f reais\n", PIBperCapita1); // Nova saida de dados para o desafio Aventureiro
 
     // Exibiçao de dados Carta2
     printf("\n=== CARTA 2 ===\n");
@@ -124,8 +124,8 @@ int main(){
     printf("Área: %.2f km²\n", Area2);
     printf("PIB: %.2f bilhões de reais\n", PIB2);
     printf("Número de Pontos Turísticos: %d\n", PontosTuristicos2);
-    printf("Densidade Populacional: %.2f hab/km²\n", DensidadePopulacional2);
-    printf("PIB per Capita: %.2f reais\n", PIBperCapita2);
+    printf("Densidade Populacional: %.2f hab/km²\n", DensidadePopulacional2); // Nova saida de dados para o desafio Aventureiro
+    printf("PIB per Capita: %.2f reais\n", PIBperCapita2); // Nova saida de dados para o desafio Aventureiro
 
     // Finaliza o código
     return 0;
