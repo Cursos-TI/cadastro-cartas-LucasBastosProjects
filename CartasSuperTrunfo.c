@@ -144,52 +144,72 @@ int main(){
     printf("O Super Poder da Carta 2 é: %.2f\n", SuperPoderCarta2);
 
     
-    // Comparações gerando resultado 1 ou 0
-    int ComparacaPopulacao = (Populacao1 > Populacao2); // maior vence
-    int ComparacaoArea = (Area1 > Area2); // maior vence
-    int ComparacaoPIB = (PIB1 > PIB2); // maior vence 
-    int ComparacaoPontosTuristicos = (PontosTuristicos1 > PontosTuristicos2); // maior vence
-    int ComparacaoDensidadePopulacional = (DensidadePopulacional1 < DensidadePopulacional2); // menor vence!
-    int ComparacaoPIBPerCapita = (PIBperCapita1 > PIBperCapita2); // maior vence
-    int ComparacaoSuperPoder = (SuperPoderCarta1 > SuperPoderCarta2); // maior vence
+    // Comparando se o resultado de uma Variável é Maior que a outra Variável
+    int ComparacaPopulacao = (Populacao1 > Populacao2); // Se for maior = 1 (Verdadeiro), se for menor = 0 (Falso) MAIOR VENCE!
+    int ComparacaoArea = (Area1 > Area2); // Se for maior = 1 (Verdadeiro), se for menor = 0 (Falso) MAIOR VENCE!
+    int ComparacaoPIB = (PIB1 > PIB2); // Se for maior = 1 (Verdadeiro), se for menor = 0 (Falso) MAIOR VENCE!
+    int ComparacaoPontosTuristicos = (PontosTuristicos1 > PontosTuristicos2); // Se for maior = 1 (Verdadeiro), se for menor = 0 (Falso) MAIOR VENCE
+    int ComparacaoDensidadePopulacional = (DensidadePopulacional1 < DensidadePopulacional2); // Se for maior = 1 (Verdadeiro), se for menor = 0 (Falso) MENOR VENCE!
+    int ComparacaoPIBPerCapita = (PIBperCapita1 > PIBperCapita2); // Se for maior = 1 (Verdadeiro), se for menor = 0 (Falso) MAIOR VENCE!
+    int ComparacaoSuperPoder = (SuperPoderCarta1 > SuperPoderCarta2); // Se for maior = 1 (Verdadeiro), se for menor = 0 (Falso) MAIOR VENCE!
 
     // Comparações das Cartas
     printf("\n=== COMPARACAO DE CARTAS ===\n");
+    // Se o resultado for igual a 1, sera verdadeiro e Carta 1 vence
+    // Se o resultado for diferente de 1, sera falso e Carta 2 vence
+    if (ComparacaPopulacao == 1) {
+        printf("Populacao: A Carta 1 (%s) venceu.\n", NomeCidade1);
+    }else {
+        printf("Populacao: A Carta 2 (%s) venceu.\n", NomeCidade2);
+    }
+
+    // Se o resultado for igual a 1, sera verdadeiro e Carta 1 vence
+    // Se o resultado for diferente de 1, sera falso e Carta 2 vence
+    if (ComparacaoArea == 1) {
+        printf("Area: A Carta 1 (%s) venceu.\n", NomeCidade1);
+    } else {
+        printf("Area: A Carta 2 (%s) venceu.\n", NomeCidade2);
+    }
+
+    // Se o resultado for igual a 1, sera verdadeiro e Carta 1 vence
+    // Se o resultado for diferente de 1, sera falso e Carta 2 vence
+    if (ComparacaoPIB == 1) {
+        printf("PIB: A Carta 1 (%s) venceu.\n", NomeCidade1);
+    } else {
+        printf("PIB: A Carta 2 (%s) venceu.\n", NomeCidade2);
+    }
+
+    // Se o resultado for igual a 1, sera verdadeiro e Carta 1 vence
+    // Se o resultado for diferente de 1, sera falso e Carta 2 vence
+    if (ComparacaoPontosTuristicos == 1) {
+        printf("Pontos Turisticos: A Carta 1 (%s) venceu.\n", NomeCidade1);
+    } else {
+        printf("Pontos Turisticos: A Carta 2 (%s) venceu.\n", NomeCidade2);
+    }
     
-    if (ComparacaPopulacao == 1) // Caso o resultado for 1, sera verdadeiro e Carta 1 vence
-        printf("Populacao: A Carta 1 venceu.\n");
-    else // Caso o resultado for 0, sera falso e Carta 2 vence
-        printf("Populacao: A Carta 2 venceu.\n");
-
-    if (ComparacaoArea == 1) // Caso o resultado for 1, sera verdadeiro e Carta 1 vence
-        printf("Area: A Carta 1 venceu.\n");
-    else // Caso o resultado for 0, sera falso e Carta 2 vence
-        printf("Area: A Carta 2 venceu.\n");
-
-    if (ComparacaoPIB == 1) // Caso o resultado for 1, sera verdadeiro e Carta 1 vence
-        printf("PIB: A Carta 1 venceu.\n");
-    else // Caso o resultado for 0, sera falso e Carta 2 vence
-        printf("PIB: A Carta 2 venceu.\n");
-
-    if (ComparacaoPontosTuristicos == 1) // Caso o resultado for 1, sera verdadeiro e Carta 1 vence
-        printf("Pontos Turisticos: A Carta 1 venceu.\n");
-    else // Caso o resultado for 0, sera falso e Carta 2 vence
-        printf("Pontos Turisticos: A Carta 2 venceu.\n");
-
-    if (ComparacaoDensidadePopulacional == 1) // Caso o resultado for 1, sera verdadeiro e Carta 1 vence
-        printf("Densidade Populacional: A Carta 1 venceu.\n");
-    else // Caso o resultado for 0, sera falso e Carta 2 vence
-        printf("Densidade Populacional: A Carta 2 venceu.\n");
-
-    if (ComparacaoPIBPerCapita == 1) // Caso o resultado for 1, sera verdadeiro e Carta 1 vence
-        printf("PIB per Capita: A Carta 1 venceu.\n");
-    else // Caso o resultado for 0, sera falso e Carta 2 vence
-        printf("PIB per Capita: A Carta 2 venceu.\n");
-
-    if (ComparacaoSuperPoder == 1) // Caso o resultado for 1, sera verdadeiro e Carta 1 vence
-        printf("Super Poder: A Carta 1 venceu.\n");
-    else // Caso o resultado for 0, sera falso e Carta 2 vence
-        printf("Super Poder: A Carta 2 venceu.\n");
+    // Se o resultado for igual a 1, sera verdadeiro e Carta 1 vence
+    // Se o resultado for diferente de 1, sera falso e Carta 2 vence
+    if (ComparacaoDensidadePopulacional == 1) {
+        printf("Densidade Populacional: A Carta 1 (%s) venceu.\n", NomeCidade1);
+    } else {
+        printf("Densidade Populacional: A Carta 2 (%s) venceu.\n", NomeCidade2);
+    }
+    
+    // Se o resultado for igual a 1, sera verdadeiro e Carta 1 vence
+    // Se o resultado for diferente de 1, sera falso e Carta 2 vence
+    if (ComparacaoPIBPerCapita == 1) {
+        printf("PIB per Capita: A Carta 1 (%s) venceu.\n", NomeCidade1);
+    } else {
+        printf("PIB per Capita: A Carta 2 (%s) venceu.\n", NomeCidade2);
+    }
+    
+    // Se o resultado for igual a 1, sera verdadeiro e Carta 1 vence
+    // Se o resultado for diferente de 1, sera falso e Carta 2 vence
+    if (ComparacaoSuperPoder == 1) {
+        printf("Super Poder: A Carta 1 (%s) venceu.\n", NomeCidade1);
+    } else {
+        printf("Super Poder: A Carta 2 (%s) venceu.\n", NomeCidade2);
+    }
 
     // Finaliza o código
     return 0;
